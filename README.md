@@ -1,8 +1,6 @@
 # Windows Security Triage
 
-A collection of PowerShell scripts built for Windows endpoint triage, process investigation, threat hunting, and basic security response scenarios.
-
-The scripts explore Windows process ancestry, executable paths, command-line activity, network connections, services, local accounts, scheduled tasks, and other indicators that can help identify suspicious endpoint behavior.
+PowerShell scripts for practicing Windows endpoint investigation, process analysis, and basic threat hunting.
 
 ## Skills Demonstrated
 
@@ -11,10 +9,16 @@ The scripts explore Windows process ancestry, executable paths, command-line act
 - Process triage
 - Parent/child process analysis
 - Command-line inspection
-- Windows CIM/WMI
-- TCP connection investigation
-- Windows service analysis
-- Local account auditing
+- TCP connection analysis
+- Windows services
+- Local account investigation
 - Scheduled task inspection
 - Basic threat hunting
-- Basic endpoint containment
+
+## Scripts
+
+- `Process-Triage.ps1` - Reviews running processes, executable paths, command lines, and basic suspicious indicators.
+- `Suspicious-Process-Ancestry-Hunt.ps1` - Examines parent/child process relationships and suspicious PowerShell or CMD ancestry.
+- `MiniThreatHunting.ps1` - Performs lightweight process and network connection investigation.
+- `unusual.ps1` - Checks Windows services for executables running from unusual locations.
+- `Automated-Hunt-and-Audit.ps1` - Combines several endpoint auditing, account, process, scheduled task, network, and containment checks.
